@@ -8,6 +8,9 @@
   animation: move 500ms infinite ease-in-out;
 }
 
+.note{
+  font-size: 16px;
+}
 @keyframes move {
   0% {
     left: -25px;
