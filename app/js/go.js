@@ -250,7 +250,7 @@
     let days = Math.floor(seconds / (3600 * 24))
     let timer = document.querySelector('#timer')
     timer.style.display = 'block'
-    let numAnim = new CountUp("count", 0, days, 0, 5)
+    let numAnim = new CountUp("count", 0, days + 1, 0, 5)
     numAnim.start()
   }
   function stars() {
