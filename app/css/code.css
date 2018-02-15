@@ -1,0 +1,32 @@
+.purple {
+  color: rgb(198, 108, 220);
+}
+.blue {
+  color: rgb(97, 162, 192);
+}
+.gray {
+  color: rgb(187, 187, 161);
+}
+.red {
+  color: rgb(195, 64, 52);
+}
+.green {
+  color: rgb(152, 195, 121);
+}
+.green-blue {
+  color: rgb(86, 182, 194);
+}
+.yellow {
+  color: rgb(217, 150, 63);
+}
+.heartBg {
+  background-color: #fc2e5a;
+}
+.note {
+  color: rgb(92, 99, 112);
+  font-size: 0.12rem;
+  margin: 0;
+}
+.blank {
+  margin: 0;
+}

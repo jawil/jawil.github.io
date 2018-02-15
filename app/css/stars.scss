@@ -1,0 +1,36 @@
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-o-keyframes #{$name} { @content; }
+  @keyframes #{$name} { @content; }
+}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+@mixin transform($str) {
+  -webkit-transform: #{$str};
+  -moz-transform: #{$str};
+  -o-transform: #{$str};
+  transform: #{$str};      
+}
+.stars {
+  width: calc(100vw/12);
+  position: absolute;
+  top: calc(-100vw/12);
+}
+@for $i from 1 through 30 {
+  .stars:nth-child(#{$i}){
+    left: #{(5 + random(95))}vw;
+    @include animation(#{(random(5) + 2)}s drop#{$i} linear forwards random()*6#{s});
+  }
+}
+@for $i from 1 through 30 {
+  @include keyframes(drop#{$i}) {
+    100% {
+      @include transform(translateY(calc(100vh + (100vw/12))) translateX(#{(random(100)-50)}#{vw}))
+    }
+  }
+}

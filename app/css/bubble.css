@@ -1,0 +1,70 @@
+.comment {
+  width: 103px;
+  height: 30px;
+  position: relative;
+  margin: 30px auto 0;
+  background: #c8f064;
+  border-radius: 5px;
+  border: 1px solid #a5d01b;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  right: 30px;
+}
+.wx {
+  background-image: url("../images/wx.png");
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  left: 4px;
+}
+.foot {
+  position: absolute;
+  background: white;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+}
+.foot > .main {
+  color: black;
+  line-height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 52px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 60%;
+  font-size: 20px;
+  padding-left: 20px;
+  border-bottom: 1px solid green;
+}
+#send,#send:visited {
+	display: inline-block;
+  padding: 5px 10px 6px;
+  border-radius: 3px;
+	position: relative;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 4px;
+  border: none;
+  background-color: #00AF34;
+  outline: none;
+}
+.comment:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 4px;
+  right: -14px;
+  border: solid 8px;
+  border-color: transparent transparent transparent #c8f064;
+  font-size: 0;
+}

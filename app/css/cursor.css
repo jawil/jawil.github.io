@@ -1,0 +1,39 @@
+#typer:after {
+  content: '';
+  display: inline-block;
+  vertical-align: baseline;
+  height: 0.14rem;
+  width: 2px;
+  background: rgb(82,139,255);
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+  -webkit-animation: typish-blink 500ms linear infinite;
+  animation: typish-blink 500ms linear infinite; }
+#typer.-nocursor:after {
+  display: none; }
+
+@-webkit-keyframes typish-blink {
+  0% {
+    opacity: 1; }
+  30% {
+    opacity: 1; }
+  40% {
+    opacity: 0; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes typish-blink {
+  0% {
+    opacity: 1; }
+  30% {
+    opacity: 1; }
+  40% {
+    opacity: 0; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=ss.css.map */
