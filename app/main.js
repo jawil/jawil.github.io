@@ -21,6 +21,7 @@ require.ensure([], function(require) {
         clickTimer && clearTimeout(clickTimer);
         document.querySelector("pre").querySelectorAll("i").forEach(item => {
           item.style.backgroundColor = "red";
+          stars();
           //item.style.color = "transparent";
         });
       } else {
@@ -33,3 +34,29 @@ require.ensure([], function(require) {
     });
   };
 });
+
+
+function stars() {
+  let send = document.querySelector('#send')
+  send.setAttribute('disabled', '')
+  setTimeout(() => {
+    send.removeAttribute('disabled')
+  }, 2000)
+  let max = 5
+  let startsContainer = document.createElement('div')
+  startsContainer.className = 'startsContainer'
+  for (let i = 0; i < 30; i++) {
+    let img = document.createElement('img')
+    let src = require('./images/6.png')
+    img.setAttribute('src', src)
+    img.setAttribute('class', 'stars')
+    startsContainer.appendChild(img)
+  }
+  
+  document.body.appendChild(startsContainer)
+  let els = document.querySelectorAll('.startsContainer')
+  let current = els.length
+  if (current > max) {
+    els[0].remove()
+  }
+}
