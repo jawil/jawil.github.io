@@ -234,6 +234,7 @@ function 情人节快乐() {
   // let heartBg = document.querySelector('#heartBg')
   let foot = document.querySelector(".foot");
   let send = document.querySelector("#send");
+  let tips = document.querySelector("#tips");
   send.addEventListener("click", () => {
     stars();
     /*     document
@@ -248,6 +249,7 @@ function 情人节快乐() {
   // heartBg.style.display = 'block'
   heartMain.style.display = "block";
   foot.style.display = "block";
+  tips.style.display = "block";
   document.querySelector("pre").style.display = "block";
   setTimeout(() => {
     count();
