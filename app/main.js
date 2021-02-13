@@ -47,12 +47,12 @@ function stars() {
   startsContainer.className = 'startsContainer'
   for (let i = 0; i < 30; i++) {
     let img = document.createElement('img')
-    let src = require('./images/6.png')
+    let src = require('./images/rose.png')
     img.setAttribute('src', src)
     img.setAttribute('class', 'stars')
     startsContainer.appendChild(img)
   }
-  
+
   document.body.appendChild(startsContainer)
   let els = document.querySelectorAll('.startsContainer')
   let current = els.length
